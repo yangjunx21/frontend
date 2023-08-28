@@ -19,7 +19,7 @@ export default defineNuxtConfig({
             strictPort: true,
             proxy: {
                 '/api': {
-                    target: 'https://talegine-production.up.railway.app',
+                    target: 'http://talegine-production.up.railway.app',
                     changeOrigin: true,
                     rewrite: (path) => path.replace(/^\/api/, '')
                 }

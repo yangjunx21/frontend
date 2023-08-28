@@ -104,7 +104,7 @@ export default {
           console.log(res);
           this.characters = res.characters;
         })
-        .catch((err) => alert("err"));
+        .catch((err) => console.log(err));
     },
   },
 };
@@ -115,7 +115,6 @@ export default {
 #background {
   width: 100%;
   min-height: 100vh;
-  background: url("~@/static/img/350.jpg") center center no-repeat;
   background-size: 100% 100%;
   opacity: 1;
   background-size: cover;
